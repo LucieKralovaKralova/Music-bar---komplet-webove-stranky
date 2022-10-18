@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5d67ac6e8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    <link rel="shortcut icon" href="img/Favicon (1).png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <img src="img/Music Kings Logo (1).jpg" alt="">
+        <p>Rezervaci je možné provést telefonicky na tel. čísle  <div><i class="fa-solid fa-phone"></i></div> </p> <a href="tel: +420123456789">+420 123 456 789</a> <p> nebo můžete jednoduše vyplnit náš rezervační formulář. <br> Budeme se těšit na vaši návštěvu.</p>
+        <form action="mailer.php" method="post">
+            <h1>Rezervační formulář</h1>
+            <input type="text" name="name" id="name" placeholder="Jméno a příjmení"required>
+            <input type="text" name="email" id="email" placeholder="Email"required>
+            <h5>datum:</h5>
+            <input type="date" name="date" id="date" placeholder=""required>
+            <h5 id="h5time">čas od:</h5>
+            <div class="time">
+                <select name="vyberhodiny" id="vyberhodiny">
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">05</option>
+                    <option value="">06</option>
+                    <option value="">07</option>
+                    <option value="">08</option>
+                    <option value="">09</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                </select>    
+                <p>:</p>
+                <!-- <input type="text" name="minute" id="minute" placeholder="mm" required> -->
+                <select name="vyberminuty" id="vyberminuty">
+                    <option value="">00</option>
+                    <option value="">15</option>
+                    <option value="">30</option>
+                    <option value="">45</option>
+                </select>
+            </div>
+
+            <h5>počet lidí:</h5>
+            <input type="text" name="people" id="people" placeholder="" required>
+            <h4>Poznámka</h4>
+            <textarea name="message"></textarea>
+            <input type="submit" id="button">
+        </form>
+
+    </div>
+</body>
+</html>
