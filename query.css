@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1200px){
+    .fotogalerie{
+        background-repeat: repeat;
+        height: 1000px;
+        /* border: 2px solid red; */
+        justify-content: flex-start;
+    }
+
+    .photo2{
+        /* flex-direction: column; */
+        margin-top: 150px;
+        
+    }
+    
+}
+
+
+@media only screen and (max-width: 1070px){
+    .akce1{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .akce2{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .info1 h3 {
+        align-self: center;
+    }
+    .info2 h3 {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 625px){
+    .container form{
+        height: 700px;
+        width: 90%;
+        display: block;
+        text-align: center;
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+.container form h1{
+    width: 60%;
+}
+.container form h5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+
+}
+.container form h4{
+    display: block;
+    text-align: center;
+    width: 200px;
+}
+.container form textarea{
+    width: 90%;
+}
+
+@media only screen and (max-width: 600px){
+    nav ul {
+        flex-wrap: wrap;
+    }  
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    #rezervace {
+        border: none;
+    }
+
+    .fotogalerie{
+        height: 1300px;
+        flex-shrink: auto;
+    }
+    .fotogalerie h1{
+        font-size: 30px;
+    }
+    .aktuality h1{
+        font-size: 30px;
+    }
+    .aktuality h2{
+        font-size: 24px;
+    }
+    .kontakt h1{
+        font-size: 30px;
+    }
+    .kontakt article{
+        margin-top: 30px;
+    }
+    
+/* Připravíme si classu - využijeme až JavaScriptu */
+.active {
+    display: block;
+}
+}
+
+@media only screen and (max-width: 335px){
+    .fotogalerie img{
+        width: 95%;
+    }
+}
