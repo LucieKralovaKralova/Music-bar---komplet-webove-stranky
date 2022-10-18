@@ -1,0 +1,846 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ***********************************HEADER******************************************* */
+body {
+    font-size: 16px;
+    transition: all 0.3s linear;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: black;
+    color: white;
+    
+}
+nav li {
+    
+    list-style-type: none;
+    padding: 1rem;
+
+}
+#rezervace {
+    margin-left: 40px;
+    /* border: 2px solid red;
+    border-radius: 30px; */
+    /* font-size: 20px; */
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Zmizení ikonky hamburgeru - zapneme až při responzivitě */
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-links:hover {
+    text-decoration:underline;
+    
+}
+.navbar-links:hover a {
+    color: white;
+}
+.rezervace:hover {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/* ***********************************HOME******************************************* */
+.home{
+    
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(1, 1, 1, 0), rgba(3,3,3,1)),url(img/uvod-pozadi.jpg);
+  
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logo img{
+    height: 100px;
+}
+h2{
+    color: #ec00ff;
+    text-shadow: 0px 0px 2px #ec00ff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Zen Tokyo Zoo';
+    font-weight: 200;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 30px;
+    height: 200px;
+    
+}
+.button a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 180px;
+    animation: blikshadows 1s infinite linear;
+    animation-direction: alternate;
+    transition: all 0.3s linear;
+}
+.btn1 {
+   align-self: flex-start ;
+}
+.btn2{
+    align-self: center;
+}
+.btn3{
+    align-self: flex-start;
+}
+
+.button a:hover{
+    
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 50px white;
+    transition: all 0.3s linear;
+    animation: blikshadows none;
+    
+}
+.button a:visited {
+    transition: all 0.3s linear;
+}
+.button a:active{
+    transform: translateY(-1px);
+    transition: all 0.3s linear;
+}
+
+
+
+
+
+
+
+
+
+/* ***********************************AKTUALITY******************************************* */
+.aktuality{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.aktuality h1 {
+    font-family: 'Zen Tokyo Zoo';
+    font-size: 56px;
+    color: #ec00ff;
+    text-shadow: 0px 0px 2px #ec00ff;
+    font-weight: 200;
+    text-align: center;
+}
+.aktuality h2{
+    font-size: 30px;
+    font-family: 'Zen Tokyo Zoo';
+    font-weight: 200;
+    text-align: center;
+}
+.aktuality p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.aktuality a{
+    display:block;
+    text-align: center;
+}
+.facebook img{
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+   
+}
+.facebook{
+    text-decoration: none;
+}
+.aktuality h3{
+    font-size: 26px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+.akce1 {
+    border: 3px solid #ec00ff;
+    box-shadow: 0px 0px 30px white;
+    margin-top: 40px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    flex-wrap: nowrap;  
+    transition: all 0.2s linear;
+}
+.akce1:hover{
+    box-shadow: 0px 0px 80px white;
+}
+.akce1 img{
+    width: 40%;
+}
+.akce1 p{
+    font-size: 24px;
+}
+.akce1 h3{
+    color: white;
+    margin-top: 0px;
+}
+
+.info1{
+   margin-left: 20px;
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.info1 h3 {
+    align-self: flex-start;
+    color: rgb(0, 81, 255);
+}
+.info1 p{
+    align-self: center;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.info1 a{
+    border: 2px solid red;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    background-color: red;
+    font-size: 20px;
+    text-align: center;
+    justify-content: flex-end;
+    align-self: center;  
+    animation-direction: alternate;
+    transition: all 0.3s linear;  
+}
+.info1 a:hover {
+    text-decoration:underline;
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 40px white;
+        background-color: black;
+        border: 2px solid white;
+        transition: all 0.3s linear;
+    }
+.info1 a:visited {
+        transition: all 0.3s linear;
+    }
+.info1 a:active{
+        transform: translateY(-1px);
+        transition: all 0.3s linear;
+    }
+
+.akce2 {
+        border: 3px solid #ec00ff;
+        box-shadow: 0px 0px 30px white;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 20px;
+        width: 80%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; 
+        transition: all 0.2s linear;
+        
+    }
+.akce2:hover{
+        box-shadow: 0px 0px 80px white;
+    }
+.akce2 img{
+        width: 40%;
+    }
+.akce2 p{
+        font-size: 24px;
+    }
+.akce2 h3{
+        color: white;
+        margin-top: 0px;
+    }
+    
+.info2{
+       margin-left: 20px;
+       display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    .info2 h3 {
+        align-self: flex-start;
+        color: rgb(0, 81, 255);
+    }
+    .info2 p{
+        align-self: center;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    .info2 a{
+        border: 2px solid red;
+        border-radius: 30px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        width: 200px;
+        background-color: red;
+        font-size: 20px;
+        text-align: center;
+        justify-content: flex-end;
+        align-self: center;  
+        animation-direction: alternate;
+        transition: all 0.3s linear;  
+    }
+    .info2 a:hover {
+        text-decoration:underline;
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 40px white;
+            background-color: black;
+            border: 2px solid white;
+            transition: all 0.3s linear;
+        }
+    .info2 a:visited {
+            transition: all 0.3s linear;
+        }
+    .info2 a:active{
+            transform: translateY(-1px);
+            transition: all 0.3s linear;
+        }
+
+
+
+
+
+
+
+
+        /* ***********************************FOTOGALERIE******************************************* */
+.fotogalerie{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(1,1,1,0) 50%, rgba(3,3,3,1) 100%), url(img/fotoaparát.jpg);
+
+    
+
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    
+}
+.fotogalerie h1{
+    font-family: 'Zen Tokyo Zoo';
+    font-size: 56px;
+    color: #ec00ff;
+    text-shadow: 0px 0px 2px #ec00ff;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.fotogalerie img{
+    width: 300px;
+    height: 170px;
+    margin: 10px 10px;
+    border: 1px solid #ec00ff;
+    transition: all 0.3s linear;
+}
+.fotogalerie img:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 40px white;
+}
+
+.fotogalerie a{
+    display: inline-block;
+    width: 300px;
+}
+article{
+    align-items: center;
+    
+}
+.photo1{
+    height: 255px;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.photo2{
+    height: 255px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#f1{
+    align-self: flex-start;
+}
+#f2{
+    align-self: flex-end;
+}
+#f3{
+    align-self: flex-start;
+}
+#f4{
+    align-self: flex-end;
+}
+#f5{
+    align-self: flex-start;
+}
+#f6{
+    align-self: flex-end;
+}
+#f7{
+    align-self: flex-start;
+}
+#f8{
+    align-self: flex-end;
+}
+
+
+
+ /* ***********************************KONTAKT******************************************* */
+ .kontakt{
+    background:linear-gradient(0deg, rgba(0,0,0,0.3), rgba(1, 1, 1, 0), rgba(3,3,3,1)),url(img/wave-81840.jpg);
+
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+    
+
+
+ .kontakt h1{
+    font-family: 'Zen Tokyo Zoo';
+    font-size: 56px;
+    color: #ec00ff;
+    text-shadow: 0px 0px 2px #ec00ff;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.kontaktbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.kontaktbox a:hover{
+    color: blue;
+}
+.kontakt article{
+    width: 200px;
+    height: 250px;
+    box-shadow: 15px 15px 50px rgb(121, 115, 115);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px) ;
+    border-radius: 30px;
+
+    color: white;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.ikona{
+    color: #ec00ff;
+    text-shadow: 0px 0px 4px #ec00ff;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.adresa{
+    font-size: 20px;
+}
+.adresa a{
+    color: rgb(5, 5, 249);
+    
+}
+.phone a{
+    font-size: 20px;
+    color: white;
+    justify-self: center;
+    text-decoration: none;
+}
+.open table{
+    width: 150px;
+    text-align: center;
+}
+
+/* .open span {
+    letter-spacing: 5px;
+} */
+/* .open ul{
+    list-style-type: none;
+
+} */
+/* .open li span{
+    letter-spacing: 1.5px;
+} */
+
+.fa-house{
+    color: blue;
+    display: inline-block;
+}
+.fa-arrow-turn-up{
+    color: blue;
+}
+.back{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.back a:hover{
+    color: blueviolet;
+}
+
+
+
+
+ /* ***********************************FOOTER******************************************* */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer p{
+    line-height: 50px;
+    text-align: center;
+    margin-right: 50px;
+}
+#odkazFacebook{
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************************Formulář******************************************** */
+/* ********************************************************************************** */
+.container {
+    /* border: 5px solid red; */
+
+    /* minimální výška 100% okna v zařízení */
+    min-height: 100vh;
+    color: white;
+
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)) ,url(img/body-svetla.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container img{
+    text-align: center;
+    height: 100px;
+
+}
+.container p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fa phone{
+    color: white;
+    display: inline-block;
+}
+.container a{
+    color: white;
+    font-size: 20px;
+}
+.container form {
+    width: 600px;
+    height: 350px;
+    /* border: 5px solid red; */
+    box-shadow: 20px 20px 50px rgb(121, 115, 115);
+    background: rgba(255, 255, 255, 0.1);
+    /* rozmazání pozadí */
+    backdrop-filter: blur(10px) ;
+
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container form h1 {
+    color: white;
+    font-weight: 500px;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+
+}
+
+.container form input {
+    /* width: 290px; */
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    margin-bottom: 10px;
+}
+#name{
+    width: 270px;
+    margin-right: 10px;
+}
+#email {
+    width: 280px;
+}
+.container form h5 {
+    color: white;
+    font-size: 16px;
+    font-weight: 300px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 80px;
+    height: 40px;
+    /* letter-spacing: 10px; */
+    /* text-align: center; */
+    /* border: 2px solid red; */
+    
+}
+#h5time{
+    width: 60px;
+}
+
+#date {
+    
+    width: 140px;
+    margin-right: 20px;
+}
+/* #hour {
+    width: 40px;
+    margin-right: 10px;
+}
+#minute {
+    width: 40px;
+    margin-right: 10px;
+} */
+.time{
+    display: flex;
+    flex-direction: row; 
+}
+.time select{
+    height: 30px;
+    margin: 5px;
+}
+#people{
+    width: 30px;
+    margin-right: 10px;
+}
+.container form input::placeholder {
+    color: white;
+    font-weight: 600px;
+
+}
+
+.container form h4 {
+    color: white;
+    font-weight: 300px;
+    width: 560px;
+    margin-top: 20px;
+}
+
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: 200px;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 80vh;
+    height: 40px;
+    
+
+        /* nastavení minimálních a maximálních hodnot */
+    /* min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px; */
+}
+    /* Stylování texarei políčka pro scrolování */
+textarea::-webkit-scrollbar {
+    width: 5px;  
+}
+    /* stylování jezdce */
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(155, 146, 146);
+}
+
+#button {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+#button:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/* ******************************Poděkování******************************************** */
+/* ********************************************************************************** */
+.podekovani{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)) ,url(img/body-svetla.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 100ch;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes blikshadows {
+    0% {
+      
+        box-shadow: 0px 0px 0px white;
+    }
+    50% {
+        box-shadow: 0px 0px 50px white;
+    }
+    100% {
+       
+        box-shadow: 0px 0px 0px white;
+    }
+}
+
+
